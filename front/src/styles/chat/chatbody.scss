@@ -1,0 +1,10 @@
+.chat-body-container {
+  position: fixed;
+  top: 0;
+  bottom: 150px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

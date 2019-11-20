@@ -1,0 +1,20 @@
+@import '../variables.scss';
+
+.thumbs-up{
+  margin-left: 450px;
+  color: $primary-color;
+  visibility: hidden;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    visibility: visible;
+    margin-top: 100%;
+  }
+  to {
+    visibility: hidden;
+    margin-top: -150%;
+    opacity: 0.6;
+  }
+}

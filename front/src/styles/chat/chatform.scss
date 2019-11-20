@@ -1,0 +1,44 @@
+@import '../variables.scss';
+
+.chat-form-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 150px;
+  margin-top: 20px;
+  bottom: 0;
+
+  .textfield {
+    width: 350px;
+  }
+
+  .actions-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+
+    .button {
+      width: 40px;
+      height: 40px;
+      background-color: $secondary-color;
+      border: 1px solid $primary-color;
+      box-shadow: none;
+      color: $primary-color;
+    }
+
+    .button:disabled {
+      border: 1px solid $disabled;
+      color: $disabled;
+    }
+
+    .create-action {}
+
+    .thumb-up-action {
+      margin-top: 10px;
+    }
+  }
+}
